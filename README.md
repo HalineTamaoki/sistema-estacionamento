@@ -8,5 +8,5 @@ Nesse projeto, criei um sistema de estacionamento utilizando Typescript (compila
 <li><b>Histórico:</b> aqui vemos todos os veículos que passaram pelo estacionamento em todo o tempo. Essa informação fica salva no repositório local</li>
 <li><b>Pátio:</b> aqui vemos todos os veículos que estão no estacionamento no momento. Essa informação fica salva no repositório local</li>
 <li><b>Tabela de Preços:</b> aqui o responsável poderá ajustar o preço para cada faixa específicada</li>
-
+<br>
 Espero que gostem! 🚗
