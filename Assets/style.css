@@ -1,0 +1,188 @@
+*{
+    margin: auto;
+    padding: 0;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+body{
+    display: flex;
+    width: 80%; 
+    background-color: rgb(199, 199, 199);
+    flex-direction: column;
+}
+
+.hidden{
+    display: none;
+}
+
+#acoes{
+    display: flex;
+    margin-top: 10vh;
+    flex-direction: column;
+}
+
+#acoes H1{
+    font-size: 3rem;
+}
+
+#acoes-botoes{
+    margin-top:5vh;
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 60%;
+    justify-content: center;
+}
+
+#acoes button{
+    width: 30vh;
+    margin: 2vh 5vh;
+    height: 20vh;
+    font-size: 1.5rem;
+    line-height: 2rem;
+    border-radius: 2%;
+    border: 1px solid black;
+    cursor: pointer;
+}
+
+#botao-entrada{
+    background-color: rgb(43, 161, 43);    
+}
+
+#botao-saida{
+    background-color: rgb(238, 34, 34);    
+}
+
+#botao-historico, #botao-patio{
+    background-color: rgb(33, 126, 189);    
+}
+
+#botao-tabela-precos{
+    background-color: orange ;    
+}
+
+#entrada, #saida{
+    display: flex;
+    flex-direction: column;
+    margin-top: 20vh;
+    height: 50vh;
+    align-items: center;
+}
+
+#entrada h2, #saida h2{
+    font-size: 2.5rem;
+}
+
+#entrada input, #saida input{
+    margin: 2vh 0;
+    width: 50vh;
+    text-align: center;
+    height: 5vh;
+    font-size: 1rem;
+}
+
+#entrada button {
+    width: 30vh;
+    margin: 2vh 0;
+    text-align: center;
+    height: 5vh;
+    font-size: 1rem;
+    background-color: rgb(43, 161, 43); ;
+    border-radius: 2%;
+    border: 1px solid black;
+    cursor: pointer;
+}
+
+#entrada-confirmacao, #saida-confirmacao{
+    display: flex;
+    flex-direction: column;
+    margin-top: 30vh;
+    height: 40vh;
+    align-items: center;
+    font-size: 2rem;
+}
+
+#saida-confirmacao p{
+    font-size: 1rem;    
+}
+
+#entrada-confirmacao button, #saida-confirmacao button{
+    width: 40vh;
+    margin: 2vh 0;
+    text-align: center;
+    height: 8vh;
+    font-size: 1.1rem;
+    border-radius: 5%;
+    border: 0.5px solid black;
+    cursor: pointer;
+    background-color: rgb(87, 87, 87);
+    color: white;
+}
+
+#saida button {
+    width: 30vh;
+    margin: 2vh 0;
+    text-align: center;
+    height: 5vh;
+    font-size: 1rem;
+    background-color: rgb(238, 34, 34);    
+    border-radius: 5%;
+    border: 1px solid black;
+    cursor: pointer;
+}
+
+#historico, #patio, #tabela-precos{
+    display: flex;
+    flex-direction: column;
+    margin-top: 10vh;
+    align-items: center;
+}
+
+#historico h2, #patio h2{
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+    color: rgb(16, 62, 94);
+}
+
+#tabela-precos h2{ 
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+    color:rgb(184, 119, 0);
+}
+
+#historico button, #patio button, #tabela-precos button{
+    border-radius: 5%;
+    border: 0.5px solid black;
+    cursor: pointer;
+    margin-top: 2rem;
+    padding: 0.5rem;
+}
+
+#historico table, #patio table{
+    width: 150vh;
+    border: 0.5px solid black;
+    text-align: center;
+    border-collapse: collapse;
+}
+
+#tabela-precos table{
+    width: 50vh;
+    border: 0.5px solid black;
+    text-align: center;
+    border-collapse: collapse;
+}
+
+#tabela-precos table input{
+    background-color: rgb(199, 199, 199);
+    text-align: center;
+    border: none;
+}
+
+#historico table th, #patio table th, #tabela-precos th{
+    border-bottom: 2px solid black;
+    padding: 0.5rem;
+}
+
+#historico table td, #patio table td, #tabela-precos td{
+    border-bottom: 1px solid black;
+    padding: 0.5rem;
+}

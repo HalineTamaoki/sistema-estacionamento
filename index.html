@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./Assets/style.css">
+    <title>Sistema de Estacionamento</title>
+</head>
+
+<body>
+    <div id="pagina-inicial">
+        <div id="acoes">
+            <div><h1>ESTACIONAMENTO</h1></div>
+            <div id="acoes-botoes">
+                <button id="botao-entrada">Entrada</button>
+                <button id="botao-saida">Saída</button>
+                <button id="botao-historico">Histórico</button>
+                <button id="botao-patio">Ver Pátio</button>
+                <button id="botao-tabela-precos">Tabela de Preços</button>
+            </div>
+        </div>
+    </div>
+    
+    <div id="pagina-entrada" class="hidden">
+        <form id="entrada">
+            <h2>REGISTRAR ENTRADA</h2>
+            <input type="text" id="nome" placeholder="Digite o nome do veículo" autocomplete="off">
+            <input type="text" id="placa" placeholder="Digite a placa do veículo" autocomplete="off">
+            <button id="botao-cadatro"><b>CADASTRAR</b></button>
+        </form>
+    </div>
+
+    <div id="pagina-confirmacao-entrada" class="hidden">
+        <div id="entrada-confirmacao">
+            <p style="color: rgb(43, 161, 43); font-size: 2.5rem;"><b>Veículo cadastrado!</b></p>
+            <p>ID do veículo:</p>
+            <p id="id-veiculo"></p>
+            <button class="voltar-pagina-inicial">Voltar para página inicial</button>
+        </div>
+    </div>
+
+    <div id="pagina-saida" class="hidden">
+        <form id="saida">
+            <h2>REGISTRAR SAÍDA</h2>
+            <input type="number" id="id-saida" placeholder="Digite o id do veículo" autocomplete="off">
+            <button id="botao-saida"><b>CONFIRMAR</b></button>
+        </form>
+    </div>
+
+    <div id="pagina-confirmacao-saida" class="hidden">
+        <div id="saida-confirmacao">
+            <p style="color: rgb(238, 34, 34); font-size: 2.5rem;"><b>Saída confirmada!</b></p>
+            <p>O veículo permanceu por:</p>
+            <p id="saida-tempo-permanencia"></p>
+            <p>Valor a pagar: R$<span id="saida-valor"></span></p>
+            <button class="voltar-pagina-inicial">Voltar para página inicial</button>
+        </div>
+    </div>
+
+    <div id="pagina-historico" class="hidden">
+        <div id="historico">
+            <h2>HISTÓRICO</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Nome</th>
+                        <th>Placa</th>
+                        <th>Horário entrada</th>
+                        <th>Horário saída</th>
+                        <th>Valor</th>
+                    </tr>
+                </thead>
+                <tbody id="tabela-historico"></tbody>
+            </table>        
+        <button class="voltar-pagina-inicial">Voltar à página principal</button>
+        </div>
+    </div>
+
+    <div id="pagina-patio" class="hidden">
+        <div id="patio">
+            <h2>PÁTIO</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Nome</th>
+                        <th>Placa</th>
+                        <th>Horário entrada</th>
+                    </tr>
+                </thead>
+                <tbody id="tabela-patio"></tbody>
+            </table>        
+        <button class="voltar-pagina-inicial">Voltar à página principal</button>
+        </div>
+    </div>
+
+    <div id="pagina-tabela-precos" class="hidden">
+        <div id="tabela-precos">
+            <h2>TABELA DE PREÇOS</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Horas</th>
+                        <th>Valor</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr id="precos">
+                        <td>Até 30 min</td>
+                        <td><input type="number" class="preco" data-hora="30"></td>
+                    </tr>
+                    <tr>
+                        <td>Até 1h</td>
+                        <td><input type="number" class="preco" data-hora="60"></td>
+                    </tr>
+                    <tr>
+                        <td>Hora adicional</td>
+                        <td><input type="number" class="preco"  data-hora="60"></td>
+                    </tr>
+                    <tr>
+                        <td>Período (12h)</td>
+                        <td><input type="number" class="preco"  data-hora="720"></td>
+                    </tr>
+                </tbody>
+            </table>
+        <button id="salvar-tabela-preco">Salvar alterações</button>        
+        <button class="voltar-pagina-inicial">Voltar à página principal</button>
+        </div>
+    </div>
+
+</div>
+    <script src="./Assets/script.js"></script>
+</body>
+</html>
