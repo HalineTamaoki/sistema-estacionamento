@@ -1,4 +1,4 @@
-# sistema-estacionamento
+# Sistema para estacionamento
 
 Nesse projeto, criei um sistema de estacionamento utilizando Typescript (compilado para JavaScript), HTML e CSS.
 
